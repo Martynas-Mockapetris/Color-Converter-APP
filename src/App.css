@@ -86,6 +86,5 @@ input[type='number'] {
   height: 100vh;
   position: absolute;
   inset: 0;
-  background-color: #ff6757;
   z-index: -1;
 }
