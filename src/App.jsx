@@ -1,11 +1,35 @@
-import './App.css'
+import './App.css';
 
 const App = () => {
   return (
-    <div>
-      App
+    <div className="app">
+      <div className="converter">
+        <h1>Color Converter</h1>
+        <div className="rgb-section">
+          <h2>RGB</h2>
+          <div className="input-groups">
+            <div className="input-group">
+              <label htmlFor="">R:</label>
+              <input type="number" name="r" min="0" max="255" id="r" value={255} />
+            </div>
+            <div className="input-group">
+              <label htmlFor="">G:</label>
+              <input type="number" name="g" min="0" max="255" id="g" value={255} />
+            </div>
+            <div className="input-group">
+              <label htmlFor="">B:</label>
+              <input type="number" name="b" min="0" max="255" id="b" value={255} />
+            </div>
+          </div>
+        </div>
+        <div className="hex-section">
+          <h2>HEX</h2>
+          <input type="text" name="hex" id="hex" maxLength="7" />
+        </div>
+      </div>
+      <div className="color-preview"></div>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
